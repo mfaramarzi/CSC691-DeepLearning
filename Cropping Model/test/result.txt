@@ -1,0 +1,125 @@
+net.optimized_memory = 0 
+mini_batch = 1, batch = 16, time_steps = 1, train = 0 
+
+ reorg_old 
+
+ seen 64, trained: 70 K-images (1 Kilo-batches_64) 
+Enter Image Path: data/obj/1.jpg: Predicted in 9.359000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/2.jpg: Predicted in 8.999000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/3.jpg: Predicted in 8.983000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/4.jpg: Predicted in 9.002000 milli-seconds.
+pavement: 85%
+Enter Image Path: data/obj/5.jpg: Predicted in 8.992000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/6.jpg: Predicted in 9.008000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/7.jpg: Predicted in 9.000000 milli-seconds.
+pavement: 91%
+Enter Image Path: data/obj/8.jpg: Predicted in 9.007000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/9.jpg: Predicted in 9.007000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/10.jpg: Predicted in 8.998000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/11.jpg: Predicted in 8.950000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/12.jpg: Predicted in 8.965000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/13.jpg: Predicted in 8.952000 milli-seconds.
+pavement: 97%
+Enter Image Path: data/obj/14.jpg: Predicted in 8.968000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/15.jpg: Predicted in 8.964000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/16.jpg: Predicted in 8.987000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/17.jpg: Predicted in 9.027000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/18.jpg: Predicted in 9.018000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/19.jpg: Predicted in 9.293000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/20.jpg: Predicted in 9.000000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/21.jpg: Predicted in 8.968000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/22.jpg: Predicted in 8.971000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/23.jpg: Predicted in 8.930000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/24.jpg: Predicted in 8.936000 milli-seconds.
+pavement: 93%
+Enter Image Path: data/obj/25.jpg: Predicted in 9.012000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/26.jpg: Predicted in 8.987000 milli-seconds.
+pavement: 97%
+Enter Image Path: data/obj/27.jpg: Predicted in 9.014000 milli-seconds.
+pavement: 97%
+Enter Image Path: data/obj/28.jpg: Predicted in 9.004000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/29.jpg: Predicted in 9.035000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/30.jpg: Predicted in 9.000000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/31.jpg: Predicted in 8.983000 milli-seconds.
+pavement: 86%
+Enter Image Path: data/obj/32.jpg: Predicted in 8.970000 milli-seconds.
+pavement: 90%
+Enter Image Path: data/obj/33.jpg: Predicted in 8.966000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/34.jpg: Predicted in 8.956000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/35.jpg: Predicted in 8.937000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/36.jpg: Predicted in 9.548000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/37.jpg: Predicted in 8.971000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/38.jpg: Predicted in 9.011000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/39.jpg: Predicted in 8.984000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/40.jpg: Predicted in 9.011000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/41.jpg: Predicted in 9.009000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/42.jpg: Predicted in 9.001000 milli-seconds.
+pavement: 96%
+Enter Image Path: data/obj/43.jpg: Predicted in 8.990000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/44.jpg: Predicted in 8.977000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/45.jpg: Predicted in 9.041000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/46.jpg: Predicted in 8.991000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/47.jpg: Predicted in 8.964000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/48.jpg: Predicted in 9.017000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/49.jpg: Predicted in 8.958000 milli-seconds.
+pavement: 92%
+Enter Image Path: data/obj/50.jpg: Predicted in 8.981000 milli-seconds.
+pavement: 93%
+Enter Image Path: data/obj/51.jpg: Predicted in 8.946000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/52.jpg: Predicted in 8.971000 milli-seconds.
+pavement: 93%
+Enter Image Path: data/obj/53.jpg: Predicted in 9.409000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/54.jpg: Predicted in 9.049000 milli-seconds.
+pavement: 94%
+Enter Image Path: data/obj/55.jpg: Predicted in 8.951000 milli-seconds.
+pavement: 93%
+Enter Image Path: data/obj/56.jpg: Predicted in 8.997000 milli-seconds.
+pavement: 93%
+Enter Image Path: data/obj/57.jpg: Predicted in 8.978000 milli-seconds.
+pavement: 95%
+Enter Image Path: data/obj/58.jpg: Predicted in 9.017000 milli-seconds.
+pavement: 92%
+Enter Image Path: 
+: Predicted in 8.991000 milli-seconds.
+Enter Image Path: 
