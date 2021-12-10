@@ -1,0 +1,87 @@
+train YOLO:
+
+./darknet detector train cfg/damage.data cfg/yolov3.cfg darknet53.conv.74
+following abdullah github
+I ran the training command in train/darknet/
+
+train yolov3-tiny with darknet53.conv.74:
+
+./darknet detector train cfg/damage.data cfg/yolov3-tiny.cfg darknet53.conv.74
+How could i use the same weight for yolo and tiny-yolo?
+
+train yolov3-tiny with yolov3-tiny.weights:
+
+./darknet detector train cfg/damage.data cfg/yolov3-tiny.cfg yolov3-tiny.weights
+
+IF I HAVE OPENCV THIS CODE SHOWS MAP AND LOSS CHART DURING TRAINING
+./darknet detector train cfg/damage.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15 -dont_show -mjpeg_port 8090 -map
+
+./darknet detector train cfg/damage.data cfg/yolov3-tiny-obj.cfg yolov3-tiny.conv.15 -map
+
+STOP AND START AGAIN
+./darknet detector train cfg/damage.data cfg/yolov3-obj.cfg backup/yolov3-obj_6000.weights -chart chart.png
+
+http://209.6.224.234:8090
+http://localhost:8090/
+
+
+./darknet detector train data/damage.data cfg/yolov3-obj.cfg darknet53.conv.74 -map
+
+./darknet detector train cfg/damage.data cfg/yolov4-obj.cfg yolov4.conv.137 -map
+
+./darknet detector train data/damage.data cfg/yolov3_RDD.cfg darknet53.conv.74 -map
+
+./darknet detector train data/damage.data cfg/yolov4-custom-RDD.cfg yolov4.conv.137 -map
+./darknet detector train data/damage.data cfg/yolov4-custom-RDD.cfg backup/yolov4-custom-RDD_last.weights -map -chart chart.png
+
+./darknet detector train data/damage.data cfg/yolov2_RDD.cfg yolov2.weights -map -chart chart.png
+
+-show_imgs
+
+--------------------------------------------------------
+
+detection
+
+./darknet detector test cfg/damage.data cfg/yolov3-tiny-obj.cfg backup/yolov3-tiny-obj_best.weights data/obj/Sumida_20170915094442.jpg
+
+giving coordinates of object
+./darknet detector test cfg/damage.data cfg/yolov3-tiny-obj.cfg backup/yolov3-tiny-obj_best.weights -ext_output data/obj/Adachi_20170906102632.jpg
+
+
+------------------------------------------------------------------------------------
+Run validation: ./darknet detector valid cfg/coco.data cfg/yolov4.cfg yolov4.weights
+
+-----------------------------------------------------------------------------
+testing
+
+
+./darknet detector map data/damage.data cfg/yolov3-tiny-obj.cfg backup/yolov3-tiny-obj_best.weights 
+
+./darknet detector map data/damage.data cfg/yolov-obj.cfg backup/yolov-obj_best.weights 
+./darknet detector map data/damage.data cfg/yolov3-obj.cfg backup/yolov3-obj_best.weights
+----------------------------------------------------------
+what is the difference between 
+
+./darknet detector map data/damage.data cfg/yolov3-tiny-obj.cfg backup/yolov3-tiny-obj_best.weights
+and 
+./darknet detector valid data/damage.data cfg/yolov3-tiny-obj.cfg backup/yolov3-tiny-obj_best.weights
+
+    map - uses my code for mAP calculation
+    valid - for using tools from different datasets: MSCOCO, ImageNet, Kitti, BDD
+
+-------------------------------------------------------------------------------------
+
+labels folder with .txt annotations
+
+python3 xml2Yolo.py --class-file damage.names --input-file /home/masoud/masoud/RDD-Abdullah/src/xml2Yolo_sample.txt
+
+labels folder is at the same folder as my dataset
+xml2Yolo_sample.txt:address of all xml files
+
+python3 xml2Yolo.py --class-file RDCC/damage.names --input-file /home/masoud/masoud/darknet-master/RDCC/xml2Yolo_sample.txt
+
+python3 xml2Yolo.py --class-file damage.names --input-file xml2Yolo_train.txt
+-------------------------------------------------
+WATCHING GPU FUCTION
+
+watch -n 1 nvidia-smi 

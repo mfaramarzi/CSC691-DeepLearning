@@ -1,0 +1,18 @@
+
+./darknet detector train data/crop.data cfg/yolov2_crop.cfg yolov2.weights -map -clear
+
+
+ ./darknet detector test data/crop.data cfg/yolov2_crop.cfg backup/yolov2_crop_best.weights data/test/gsv_230.jpg -thresh .8
+
+
+
+To process a list of images data/train.txt and save results of detection to result.txt use:
+
+./darknet detector test data/crop.data cfg/yolov2_crop.cfg backup/yolov2_crop_best.weights -dont_show -ext_output < data/train.txt >  result.txt -thresh 0.8
+
+
+Pseudo-lableing - to process a list of images data/new_train.txt and save results of detection in Yolo training format for each image as label <image_name>.txt (in this way you can increase the amount of training data) use: 
+
+darknet.exe detector test cfg/coco.data cfg/yolov4.cfg yolov4.weights -thresh 0.25 -dont_show -save_labels < data/new_train.txt
+
+./darknet detector test data/crop.data cfg/yolov2_crop.cfg backup/yolov2_crop_best.weights -dont_show -save_labels < data/train.txt >  result.txt -thresh 0.8
